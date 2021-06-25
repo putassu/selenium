@@ -1,0 +1,142 @@
+INFO:root:РђРєРєР°СѓРЅС‚ РґР»СЏ Р·Р°РїСЂРѕСЃР°: superiority101@yandex.ru 321-Vcxz1
+INFO:root:РџСЂРѕРєСЃРё РґР»СЏ Р·Р°РїСЂРѕСЃР°: 91.107.119.18:34512
+INFO:root:-----------------------------------------------------------
+INFO:django.utils.autoreload:C:\Users\sigur\parser\wordstat\parser_wordstat\parse.py changed, reloading.
+WARNING:django.request:Not Found: /admin/catalog/patient
+WARNING:django.request:Method Not Allowed: /wordstat/
+WARNING:django.request:Bad Request: /wordstat/
+WARNING:django.request:Bad Request: /wordstat/
+INFO:django.utils.autoreload:C:\Users\sigur\parser\wordstat\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /wordstat/
+Traceback (most recent call last):
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\sigur\parser\wordstat\views.py", line 33, in get_history
+    data = get_history_data(serializer.data)
+  File "C:\Users\sigur\parser\wordstat\parser_wordstat\getdata.py", line 14, in get_history_data
+    parse = Parser(SessionObject())
+  File "C:\Users\sigur\parser\wordstat\parser_wordstat\sessions.py", line 44, in __init__
+    self.session = webdriver.Firefox()
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 164, in __init__
+    self.service.start()
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
+WARNING:django.request:Method Not Allowed: /wordstat/
+ERROR:django.request:Internal Server Error: /wordstat/
+Traceback (most recent call last):
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\sigur\parser\wordstat\views.py", line 33, in get_history
+    data = get_history_data(serializer.data)
+  File "C:\Users\sigur\parser\wordstat\parser_wordstat\getdata.py", line 14, in get_history_data
+    parse = Parser(SessionObject())
+  File "C:\Users\sigur\parser\wordstat\parser_wordstat\sessions.py", line 44, in __init__
+    self.session = webdriver.Firefox()
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 164, in __init__
+    self.service.start()
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
+INFO:django.utils.autoreload:C:\Users\sigur\parser\wordstat\parser_wordstat\sessions.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\sigur\parser\wordstat\parser_wordstat\sessions.py changed, reloading.
+WARNING:django.request:Method Not Allowed: /wordstat/
+ERROR:django.request:Internal Server Error: /wordstat/
+Traceback (most recent call last):
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 72, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 854, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\subprocess.py", line 1307, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] Не удается найти указанный файл
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "C:\Users\sigur\parser\wordstat\views.py", line 33, in get_history
+    data = get_history_data(serializer.data)
+  File "C:\Users\sigur\parser\wordstat\parser_wordstat\getdata.py", line 14, in get_history_data
+    parse = Parser(SessionObject())
+  File "C:\Users\sigur\parser\wordstat\parser_wordstat\sessions.py", line 44, in __init__
+    self.session = webdriver.Firefox()
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\firefox\webdriver.py", line 164, in __init__
+    self.service.start()
+  File "C:\Users\sigur\AppData\Local\Programs\Python\Python38\lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+
